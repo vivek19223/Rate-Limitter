@@ -1,4 +1,4 @@
-import rateLimiter from '../utils/rateLimiterService.js';
+import rateLimiter from '../service/rateLimiterService.js';
 import {ThrottleError} from '../error/errors.js';
 const rateLimiterMiddleware = (req, res, next) => {
   const key = `${req.ip}-${req.url}`; // Any values can be a key Ex:(userId, authorizationToken).Currently each individual API is subject to rate-limiting i.e if the MAX API request is 20 per sec, all the API can be called 20 times in a second. This behaviour can be prevented with the choice of key.
