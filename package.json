@@ -1,0 +1,32 @@
+{
+  "name": "rate-limitter",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "ava"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "ioredis": "^5.2.3",
+    "rate-limiter-flexible": "^2.3.8"
+  },
+  "devDependencies": {
+    "ava": "^4.3.3",
+    "nodemon": "^2.0.19",
+    "supertest": "^6.2.4"
+  },
+  "ava": {
+    "files": [
+      "test/**/*"
+    ]
+  }
+}
